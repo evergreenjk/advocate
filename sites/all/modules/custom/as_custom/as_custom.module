@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_init().
+ *
+ */
+/*
+function alc_custom_init(){
+	global $user;
+	if($GLOBALS['theme_key'] == 'bootstrap_alc' &&  $user->uid !='1'){
+		module_invoke('admin_menu', 'suppress');
+	}
+}
+*/
+/**
+ * Implements hook_node_update().
+ * @param object $node
+ */
+function alc_custom_node_update($node) {
+	$ws_urls[] = url('outage/active',array('absolute' => true));
+	$ws_urls[] = url('outage/fixed',array('absolute' => true));
+	$ws_urls[] = url('release/new',array('absolute' => true));
+	$ws_urls[] = url('release/upcoming',array('absolute' => true));
+	cache_clear_all($ws_urls, 'cache_page');
+}

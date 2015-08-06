@@ -1,0 +1,40 @@
+name = Advocate Space Profile
+description = Install with commonly used features pre-configured.
+version = VERSION
+core = 7.x
+dependencies[] = block
+dependencies[] = color
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+dependencies[] = addanother
+dependencies[] = admin_menu
+dependencies[] = ckeditor
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = fe_block
+dependencies[] = features_roles_permissions
+dependencies[] = jquery_update
+dependencies[] = views
+dependencies[] = views_ui
+
+
+dependencies[] = as_custom
+
+; Information added by Drupal.org packaging script on 2015-06-17
+version = "7.38"
+project = "drupal"
+datestamp = "1434567286"
+

@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * Implements hook_install().
+ * ALC Custom module
+ * 
+ */
+function as_custom_install(){
+	//ALC Custom settings
+	_alc_custom_settings();
+}
+
+
+/**
+ * ALC Custom settings
+ */
+function _alc_custom_settings(){
+	//Enable required themes
+	$default_theme = 'bootstrap_as';
+	$admin_theme = 'seven';
+	theme_enable(array('bootstrap',$default_theme,$admin_theme));
+	
+	variable_set('theme_default', $default_theme);
+	variable_set('admin_theme', $admin_theme);
+	
+	//Set bootstrap_alc theme to use favicon and logo
+	
+	$theme_settings = variable_get('theme_'.$default_theme.'_settings',array());
+	$theme_settings['default_logo']= 1;
+	$theme_settings['default_favicon']= 1;
+	$theme_settings['bootstrap_navbar_position']= 'fixed-top';
+	$theme_settings['bootstrap_bootswatch'] = 'spacelab';
+	variable_set('theme_'.$default_theme.'_settings', $theme_settings);
+}
