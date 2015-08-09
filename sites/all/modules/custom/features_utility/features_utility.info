@@ -1,0 +1,14 @@
+name = Features Utility
+description = Features Utility
+core = 7.x
+package = AS
+version = 7.x-1.0
+dependencies[] = features
+dependencies[] = filter
+features[ckeditor_profile][] = Advanced
+features[ckeditor_profile][] = Basic
+features[ckeditor_profile][] = CKEditor Global Profile
+features[features_api][] = api:2
+features[filter][] = basic_html
+features[filter][] = full_htnl
+features_exclude[dependencies][ckeditor] = ckeditor

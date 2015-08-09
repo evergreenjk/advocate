@@ -1,20 +1,10 @@
 <?php
 
 /**
- * Implements hook_install().
- * ALC Custom module
+ * Implementation of hook_install().
  * 
  */
 function as_custom_install(){
-	//ALC Custom settings
-	_alc_custom_settings();
-}
-
-
-/**
- * ALC Custom settings
- */
-function _alc_custom_settings(){
 	//Enable required themes
 	$default_theme = 'bootstrap_as';
 	$admin_theme = 'seven';
@@ -31,4 +21,9 @@ function _alc_custom_settings(){
 	$theme_settings['bootstrap_navbar_position']= 'fixed-top';
 	$theme_settings['bootstrap_bootswatch'] = 'spacelab';
 	variable_set('theme_'.$default_theme.'_settings', $theme_settings);
-}
+
+	
+	//module enable features home block
+	module_enable(array('features_home_block'),TRUE);
+	
+} 

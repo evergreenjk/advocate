@@ -29,7 +29,9 @@ dependencies[] = features_roles_permissions
 dependencies[] = jquery_update
 dependencies[] = views
 dependencies[] = views_ui
-
+dependencies[] = webform
+dependencies[] = webform_block
+dependencies[] = mollom
 
 dependencies[] = as_custom
 

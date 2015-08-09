@@ -1,0 +1,13 @@
+name = Features Home Block
+description = Features Home Block
+core = 7.x
+package = AS
+version = 7.x-1.0
+dependencies[] = fe_block
+features[fe_block_boxes][] = home_block1
+features[fe_block_boxes][] = home_block2
+features[fe_block_boxes][] = home_block3
+features[fe_block_settings][] = block-home_block1
+features[fe_block_settings][] = block-home_block2
+features[fe_block_settings][] = block-home_block3
+features[features_api][] = api:2

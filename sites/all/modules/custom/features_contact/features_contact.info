@@ -1,0 +1,9 @@
+name = Features Contact
+description = Features Contact
+core = 7.x
+package = AS
+version = 7.x-1.0
+dependencies[] = fe_block
+dependencies[] = webform
+features[fe_block_settings][] = webform-client-block-1
+features[features_api][] = api:2

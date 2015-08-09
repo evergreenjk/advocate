@@ -1,0 +1,14 @@
+name = Featuers Permission
+description = Featuers Permission
+core = 7.x
+package = AS
+version = 7.x-1.0
+dependencies[] = features
+dependencies[] = features_roles_permissions
+features[features_api][] = api:2
+features[roles_permissions][] = admin
+features[roles_permissions][] = anonymous user
+features[roles_permissions][] = authenticated user
+features[roles_permissions][] = webmaster
+features[user_role][] = admin
+features[user_role][] = webmaster
