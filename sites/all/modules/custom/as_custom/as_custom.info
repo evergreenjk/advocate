@@ -1,7 +1,8 @@
 name = ASpace Customizations
 description = Any customization on ASpace will be performed by this module.
 
-;dependencies[] = features_outage
+dependencies[] = webform
+dependencies[] = mollom
 
 
 package = ASpace
