@@ -35,6 +35,14 @@ dependencies[] = realname
 dependencies[] = webform
 dependencies[] = webform_block
 dependencies[] = mollom
+dependencies[] = job_scheduler
+dependencies[] = token
+dependencies[] = node_export
+dependencies[] = advanced_forum
+dependencies[] = blog
+dependencies[] = faqfield
+dependencies[] = feeds
+dependencies[] = uuid
 
 dependencies[] = as_custom
 

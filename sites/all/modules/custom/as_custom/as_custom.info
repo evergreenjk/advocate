@@ -4,6 +4,8 @@ description = Any customization on ASpace will be performed by this module.
 dependencies[] = features_contact
 dependencies[] = featuers_permission
 dependencies[] = features_utility
+dependencies[] = features_question
+dependencies[] = features_home_block
 
 package = ASpace
 version = "7.x-1.0"
