@@ -6,6 +6,7 @@ dependencies[] = featuers_permission
 dependencies[] = features_utility
 dependencies[] = features_question
 dependencies[] = features_home_block
+dependencies[] = features_faq
 
 package = ASpace
 version = "7.x-1.0"

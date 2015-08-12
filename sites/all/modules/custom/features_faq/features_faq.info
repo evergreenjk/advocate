@@ -1,0 +1,11 @@
+name = Features FAQ
+description = FAQ features
+core = 7.x
+package = AS
+version = 7.x-1.0
+dependencies[] = faqfield
+dependencies[] = features
+features[features_api][] = api:2
+features[field_base][] = field_faq
+features[field_instance][] = node-faq-field_faq
+features[node][] = faq
