@@ -1,0 +1,11 @@
+name = Features Question
+description = Features Question
+core = 7.x
+package = AS
+version = 7.x-1.0
+dependencies[] = features
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_instance][] = node-question-body
+features[node][] = question
